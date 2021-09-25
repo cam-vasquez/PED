@@ -20,8 +20,21 @@ int main(void){
     return 0;
 }
 
+// dos formas de realizar el Teorema de Euclides
+
+// 1
 
 int mcd_recursivo(int a, int b) {
+    if (a % b == 0) return b;
+    return mcd_recursivo(b, a % b);
+    }
+
+
+
+// 2
+
+/* int mcd_recursivo(int a, int b) {
     if (b == 0) return a;
     return mcd_recursivo(b, a % b);
     }
+ */
