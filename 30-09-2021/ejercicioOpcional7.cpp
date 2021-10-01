@@ -38,14 +38,14 @@ ListaSimple::ListaSimple(void){
 
 void menu(void){
 
-    cout << endl << endl;
+    	cout << endl << endl;
 	cout <<"\t\t\tMenu" << endl << endl;
 	cout << "\tPupusas de maiz y arroz" << endl;
-    cout << "- Frijol con queso" << endl;
-    cout << "- Queso" << endl;
-    cout << "- Revueltas" << endl;
+    	cout << "- Frijol con queso" << endl;
+    	cout << "- Queso" << endl;
+    	cout << "- Revueltas" << endl;
 	cout << "\tBebida: " << endl;
-    cout << "- Coca Cola" << endl;
+    	cout << "- Coca Cola" << endl;
 }
 
 void ListaSimple::ingresarDatos(PLista &lista)
@@ -54,25 +54,25 @@ void ListaSimple::ingresarDatos(PLista &lista)
    PLista c, f = new(struct nodo);
   
 	cout<<"\tOrdenes de Pupuseria";
-    cout << endl << endl;
+    	cout << endl << endl;
 	cout<<"\tPedidos";
-    cout << endl << endl;
+    	cout << endl << endl;
 	cin.ignore();
-    cout << "Nombre: "; cin.getline(f->nombre, 20);
-    cout << "Num. pupusas: "; 
-    cin >> f->cantidad;
-    cout << "Arroz o Maiz: "; 
-    cin.ignore();
-    cin.getline(f->tipo, 20);
-    cout <<"Ingrediente: "; 
-    cin.getline(f->ingredientes, 20);
+    	cout << "Nombre: "; cin.getline(f->nombre, 20);
+    	cout << "Num. pupusas: "; 
+   	cin >> f->cantidad;
+    	cout << "Arroz o Maiz: "; 
+    	cin.ignore();
+    	cin.getline(f->tipo, 20);
+    	cout <<"Ingrediente: "; 
+   	cin.getline(f->ingredientes, 20);
 	cout << "Bebida (Coca Cola/ Ninguna): "; 
-    cin.getline(f->bebida, 10);
-    cout << endl;
+    	cin.getline(f->bebida, 10);
+    	cout << endl;
 
 	f->sig = NULL;
 
-	if(lista==NULL){
+	if (lista==NULL){
     	lista = f;
 	} 
     else{
