@@ -42,7 +42,7 @@ int main(void){
                 continuar = false;
                 break;
             default: //El usuario se equivoco
-                cout << "Ningun usuario ha inciado sesion" << endl;
+                cout << "Opcion invalida" << endl;
                 break;
         }
     }while(continuar);
