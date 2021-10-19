@@ -110,13 +110,11 @@ void LinkedList::deleteItem(T datoB){
     else{ // Si la lista no está vacía, entonces:
         Node *saltarin = header;
         while(saltarin && (saltarin->data).perfil.compare(datoB.perfil)!=0) // Saltar.
-            saltarin = saltarin->next; // Luego de saltar hay varias posibilidades:
+            saltarin = saltarin->next;
         if(!saltarin) // a) saltarín se salió (el dato no está en la lista).
             cout << "El usuario no ha sido ingresado" << endl;
-        else{ // Si saltarín no se salió (está sobre el dato a eliminar):
-              // el nodo puede estar al principio, puede estar al final,
-              // puede estar entre dos nodos, puede ser el único nodo.
-            if(!saltarin->previous && saltarin->next){ // Al principio (y hay más nodos).
+        else{  /* Condicion para cuandosaltarin esta sibre el dato eliminar, si el nodo esta al inicio o al final, si esta entre nodos o es el unico nodo que tengamos */
+            if(!saltarin->previous && saltarin->next){ 
                 header = header->next;
                 header->previous = NULL;
                 delete saltarin;
