@@ -23,7 +23,7 @@ T solicitarInformacion(void){
     T p;
     cout << "Id de usuario: ";
     cin >> p.id; cin.ignore();
-    cout << "UserName: ";
+    cout << "User Name: ";
     getline(cin, p.userName); cin.ignore();
     cout << "Perfil (administrador, cliente, trabajador): ";
     getline(cin, p.perfil); cin.ignore();
