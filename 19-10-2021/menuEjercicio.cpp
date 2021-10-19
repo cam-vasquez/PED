@@ -31,10 +31,10 @@ int main(void){
                 sesion.addBack(p);  
                 cout << "Ha ingresado sesion exitosamente" << endl;
                 break;
-            case 2: //Mostrar pedido de inicio a fin
+            case 2: //Mostrar usuarios del inicio al final
                 sesion.printForward(); 
                 break;
-            case 3: //Eliminar un pedido
+            case 3: //Eliminar un usuario
                 p = solicitarInformacion(); 
                 sesion.deleteItem(p); 
                 break;
