@@ -8,10 +8,10 @@ int menu(){
 
     cout << endl;
     cout << "\tBienvenido" << endl;
-    cout << "1) Iniciar sesion" << endl;
-    cout << "2) Mostrar usuarios ingresados" << endl;
-    cout << "3) Eliminar usuarios" << endl;
-    cout << "4) Salir" << endl;
+    cout << "1. Iniciar sesion" << endl;
+    cout << "2. Mostrar usuarios ingresados" << endl;
+    cout << "3. Eliminar usuarios" << endl;
+    cout << "4. Salir" << endl;
     cout << "Su Opcion: ";
     cin >> opcion; 
     cin.ignore();
